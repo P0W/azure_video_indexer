@@ -63,7 +63,7 @@ class AzureVideoIndexer:
         video_data = response.json()
         upload_video_id = video_data.get("id")
         print(f"Video {upload_video_id} uploading for indexing...")
-        return id
+        return upload_video_id
 
     def get_indexed_video(self, video_id):
         """Gets the indexed video from Video Indexer."""
